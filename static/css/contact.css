@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+}
+
+.header-content{
+    position: relative;
+    margin: 14rem 20rem 10rem 20rem;
+    width: 72%;
+    font-weight: 100;
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    margin-left: 205px;
+    margin-top: 185px;
+}
+
+.header-content span{
+    color: #E1DE72;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    height: 130px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #E1DE72;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+}
+
+.navlist a{
+    display: flex;
+    color: #E1DE72;
+    margin-Left: 60px;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid #E1DE72;
+    font-weight: 100;
+}
+
+.sign-in-btn{
+    margin-left: 60px;
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+}
+
+.sign-in-btn a{
+    margin-Left: 0px;
+    font-size: 15px;
+    font-weight: 100;
+    border:none;
+    transition: all .55s ease;
+}
+
+.sign-in-btn:hover{
+    background: #e9e44e;
+    border: 1px solid rgb(28, 28, 28);
+    color: black;
+    transform: translateX(1px);
+    vertical-align: middle;
+}
+
+.sign-in-btn a:hover{
+    color: black;
+    border: none;
+}
+
+.sign-in-btn h5{
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 500;
+    Line-height: 1; 
+    color: #ffffff;
+    margin: 0 0 35px;
+}

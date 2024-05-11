@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    height: 130px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #E1DE72;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+}
+
+.navlist a{
+    display: flex;
+    color: #E1DE72;
+    margin-Left: 60px;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid #E1DE72;
+    font-weight: 100;
+}
+
+.sign-in-btn{
+    margin-left: 60px;
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+}
+
+.sign-in-btn a{
+    margin-Left: 0px;
+    font-size: 15px;
+    font-weight: 100;
+    border:none;
+    transition: all .55s ease;
+}
+
+.sign-in-btn:hover{
+    background: #e9e44e;
+    border: 1px solid rgb(28, 28, 28);
+    color: black;
+    transform: translateX(1px);
+    vertical-align: middle;
+}
+
+.sign-in-btn a:hover{
+    color: black;
+    border: none;
+}
+
+.sign-in-btn h5{
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height: 100vh; 
+    width: 100%; 
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 7.5% 15%;
+}
+
+.hero-text{
+    margin-top: 20px;
+    margin-left: -90px;
+    
+}
+
+.hero-text h1{
+    font-size: 32px;
+    font-weight: 500;
+    Line-height: 1; 
+    color: #E1DE72;
+    margin: 0 0 20px;
+}
+
+.hero-text h2{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
+    font-size: 20px;
+    Line-height: 1; 
+    color: white;
+    margin: 0 0 45px;
+    margin-bottom: 25px;
+}
+
+.hero-text h4{ 
+    font-size: 32px;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.hero-text h5{
+    font-size: 14px; 
+    font-weight: 100; 
+    color: white; 
+    margin-bottom: 40px;
+}
+
+.hero-text p{
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    Line-height: 1.9;
+    margin-bottom: 40px;
+    width: 500px;
+}
+
+.hero-img img{
+    width: 600px;
+    height: auto;
+    animation: fadeInFromTop 0.7s linear forwards, floating ease 5s infinite;
+    margin-left: -10px;
+    margin-top: 100px;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #4d9559;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    Line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text a.ctaa{
+    margin-left: 20px;
+}
+
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.elfsight-app-e97678d6-8441-4b32-be6a-0854cfb31568{
+    margin-bottom: -50px;
+    width: 500px;
+    margin-left: -90px;
+}
+
+
+
+/* -----------animation---------- */
+
+@keyframes fadeInFromTop{
+    from{
+    opacity: 0;
+    transform: translateY (-20px);
+    }
+
+    to{
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes floating{
+0%{
+    transform: translate(0%, 0%) rotate(360deg);
+}
+25%{
+    transform: translate(0%, 2%) rotate(360deg);
+}
+50%{
+    transform: translate(0%, 0%) rotate(360deg) ;
+}
+75%{
+    transform: translate(0%, 2%) rotate(360deg);
+}
+100%{ 
+    transform: translate(0%,0%) rotate(360deg);
+}
+}

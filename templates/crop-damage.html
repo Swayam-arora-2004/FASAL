@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crop Damage Analysis System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/crop-damage.css') }}">
+</head>
+<body>
+
+    <header>
+        <a href="{{ url_for('index') }}" class="logo">Fasal</a>
+        <ul class="navlist">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <button class="sign-in-btn"><h5><a href="{{ url_for('login') }}">Sign In</a></h5></button>
+        </ul>
+    </header>
+
+    <h1>Crop Damage Analysis System<span>🌱</span></h1>
+    <div>
+        <div class="container">
+            <form action="/analysis" method="POST" enctype="multipart/form-data">
+                <div class="input-group">
+                    <input type="file" name="file" accept="image/*">
+                </div>
+                <div class="text-center">
+                    <button type="submit">Get Analysis</button>
+                </div>
+            </form>            
+            {% if prediction %}
+                <!-- <h2>Predicted Class: {{ prediction }}</h2> -->
+                <img src="{{ url_for('static', filename='result.png') }}" alt="Result Image" style="height: 300px; width: 300px">
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

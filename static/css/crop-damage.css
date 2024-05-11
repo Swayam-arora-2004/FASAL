@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    height: 130px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #E1DE72;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+}
+
+.navlist a{
+    display: flex;
+    color: #E1DE72;
+    margin-Left: 60px;
+    font-size: 15px;
+    font-weight: 100;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid #E1DE72;
+    font-weight: 100;
+}
+
+.sign-in-btn{
+    margin-left: 60px;
+    padding: 5px 15px;
+    background: transparent;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+}
+
+.sign-in-btn a{
+    margin-Left: 0px;
+    font-size: 15px;
+    font-weight: 100;
+    border:none;
+    transition: all .55s ease;
+}
+
+.sign-in-btn:hover{
+    background: #e9e44e;
+    border: 1px solid rgb(28, 28, 28);
+    color: black;
+    transform: translateX(1px);
+    vertical-align: middle;
+}
+
+.sign-in-btn a:hover{
+    color: black;
+    border: none;
+}
+
+.sign-in-btn h5{
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+
+body{
+    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+}
+
+h1 {
+    margin-top: 7rem;
+    color: rgb(177, 235, 203);
+    text-align: center;
+}
+
+.card {
+    margin-left: 410px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+}
+
+.container { 
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4.5rem 10rem;
+    padding: 3rem 5rem 2rem 10rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+label {
+    text-align: left;
+    color: rgb(177, 235, 203);
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+}
+
+input nitrogen{
+    margin-left: 20px;
+}
+
+input[type="number"] {
+    color: rgb(177, 235, 203);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 0.5rem;
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+::-webkit-input-placeholder{
+    color: #78df89;
+}
+
+.text-center {
+    margin-left: -10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin-right: 5rem;
+}
+
+.card-body{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    color: rgb(125, 225, 170);
+    background: #3b6743;
+    border: 1px solid #b6b9b7;
+    transform: translateX(8px);
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 7px;
+    transition: color 0.15s;
+    transition: background-color 0.15s;
+    transition: border-color 0.15s;
+    cursor: pointer;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+button:hover{
+    background: #3b6743;
+    border: 1px solid #69b382;
+    box-shadow: 0 0 10px #74b68a;
+    transition: 0.15s ease;
+    border-radius: 7px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Crop Management and Damage Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!---google fonts link--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header>
+    <a href="{{ url_for('index') }}" class="logo">Fasal</a>
+    <ul class="navlist">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+        <button class="sign-in-btn"><h5><a href="{{ url_for('login') }}">Sign In</a></h5></button>
+    </ul>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Smart Crop Management and Damage Prediction System</h1>
+        <h4>Advanced Crop Analysis</h4>
+        <h2>MAXIMIZE YIELDS</h2>
+        <p>A platform that brings together the power of data to revolutionize agriculture. We have harnessed the potential of two crucial datasets to create a solution that empowers farmers, agronomists, and stakeholders in the agricultural ecosystem.</p>
+        <a href="{{ url_for('recommend') }}">Crop Prediction</a>
+        <a href="{{ url_for('damage') }}">Crop Damage Analysis</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="/static/hero-img.png">
+    </div>
+
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script id="messenger-widget-b" src="https://cdn.botpenguin.com/website-bot.js" defer>65f6a419b18f7502d4395637,65f6a40e7a97f103c1d15d54</script>
+    <div class="elfsight-app-e97678d6-8441-4b32-be6a-0854cfb31568" data-elfsight-app-lazy></div>
+</section>
+
+</body>
+</html>

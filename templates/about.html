@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Crop Management and Damage Prediction System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <a href="{{ url_for('index') }}" class="logo">Fasal</a>
+        <ul class="navlist">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+            <button class="sign-in-btn"><h5><a href="{{ url_for('login') }}">Sign In</a></h5></button>
+        </ul>
+    </header>
+
+    <div class="header-content">
+        Our primary goal is to provide accurate, data-driven insights for crop management.<br>
+        - Enhance crop yield predictions using attributes like nitrogen, phosphorus, potassium, pH, rainfall, temperature, and humidity.<br>
+        - Improve the assessment of crop damage by considering factors such as crop type, soil type, and pesticide count.<br>
+        - Enable smarter decision-making for farmers to optimize their agricultural practices.<br>
+        <br>
+        Dataset Description:<br>
+        Our project integrates two essential datasets:<br>
+        <br>
+        1. Crop Prediction Dataset: This dataset provides information about key environmental factors and soil conditions that impact crop growth and yield predictions. It includes attributes like nitrogen, phosphorus, potassium, pH, rainfall, temperature, and humidity.
+        <br><br>
+        2. Crop Damage Classification Dataset: This dataset categorizes the significance of crop damage into partial damage, significant damage, and minimal damage. It takes into account variables such as crop type, soil type, and pesticide count.
+        <br><br>
+        We have meticulously curated and cleaned these datasets to ensure the highest data quality and accuracy.
+        <br><br>
+        Methodology:<br>
+        Our approach involves applying advanced machine learning and data analysis techniques to combine these datasets, creating a predictive model that can provide valuable insights into crop management.
+        <br><br>
+        Significance:<br>
+        Accurate crop prediction and damage classification are vital for sustainable agriculture. Our platform's insights can lead to increased yields, reduced environmental impact, and cost savings for farmers and the agricultural industry as a whole.
+    </div>
+</body>
+</html>
